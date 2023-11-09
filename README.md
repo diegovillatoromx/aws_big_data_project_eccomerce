@@ -2,12 +2,49 @@
 Ecommerce analytics is the process of collecting data from all of the sources that affect a certain shop. Analysts can then utilize this information to deduce changes in customer behavior and online shopping patterns. Ecommerce analytics spans the whole customer journey.
 
 ```arduino
-├── src/
-│   ├── your_code.py
-├── scripts/
-│   ├── deploy.sh
-│   ├── run.py
-├── README.md
+ ├── src/
+ │   ├── stream_1_producer/
+ │   │   ├── your_stream_1_producer.py
+ ├── s3_firehose/
+ │   ├── firehose_to_s3_delivery_stream/
+ │   │   ├── your_firehose_to_s3_delivery_stream_config.json
+ ├── kinesis_analytics/
+ │   ├── stream_1_to_stream_2_application/
+ │   │   ├── your_stream_1_to_stream_2_application.sql
+ ├── glue_catalog/
+ │   ├── glue_job/
+ │   │   ├── your_glue_job_script.py
+ ├── lambda/
+ │   ├── stream_2_processing_lambda/
+ │   │   ├── your_stream_2_processing_lambda.py
+ ├── cloudwatch_dashboard/
+ │   ├── your_dashboard_config.json
+ ├── sns/
+ │   ├── sns_alerts/
+ │   │   ├── your_sns_alerts_config.json
+ ├── dynamodb/
+ │   ├── dynamodb_table/
+ │   │   ├── your_dynamodb_table_config.json
+ ├── scripts/
+ │   ├── deploy_stream_1_producer.sh
+ │   ├── deploy_firehose_to_s3.sh
+ │   ├── deploy_stream_1_to_stream_2_application.sh
+ │   ├── deploy_glue_job.sh
+ │   ├── deploy_stream_2_processing_lambda.sh
+ │   ├── deploy_dashboard.sh
+ │   ├── deploy_sns_alerts.sh
+ │   ├── deploy_dynamodb_table.sh
+ ├── config/
+ │   ├── stream_1_producer_config.yaml
+ │   ├── firehose_to_s3_config.yaml
+ │   ├── stream_1_to_stream_2_application_config.yaml
+ │   ├── glue_job_config.yaml
+ │   ├── stream_2_processing_lambda_config.yaml
+ │   ├── dashboard_config.yaml
+ │   ├── sns_alerts_config.yaml
+ │   ├── dynamodb_table_config.yaml
+ ├── README.md
+
 ```
 
 ## Table of Contents 
