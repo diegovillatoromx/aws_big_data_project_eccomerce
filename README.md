@@ -18,22 +18,18 @@ A data pipeline serves as a sophisticated mechanism for seamlessly transporting 
 
 The comprehensive scope of a data pipeline encompasses a series of stages, starting from the acquisition or harvesting of data through diverse methods. The journey continues with storing the raw data, followed by cleaning, validating, and transforming it into a format conducive to queries. The pipeline's responsibilities extend to showcasing Key Performance Indicators (KPIs) and overseeing the entire process.
 
-### Key Components:
+```sql
+Key Components         | Description
+---------------------- | ---------------------------------------------------------------------
+**Analytical Pipelines**| Introduces two robust pipelines—Batch and Real-time. The Batch processing pipeline involves data ingestion, Lake House architecture, processing, and visualization using Amazon Kinesis, Glue, S3, and QuickSight.
+**Insights Generated**  | - Unique daily visitors
+                         - User behavior analysis during specific time frames, focusing on cart additions without purchases.
+                         - Top categories trending hourly or by weekday for strategic promotions.
+                         - Identifying brands needing intensified marketing efforts.
+**Real-time Channel**   | Swiftly detects and mitigates potential threats, specifically DDoS and Bot attacks, using a dynamic combination of AWS Lambda, DynamoDB, CloudWatch, and AWS SNS.
+```
 
-#### Analytical Pipelines:
-
-***[The project](https://github.com/diegovillatoromx/aws_big_data_project_eccomerce/)*** introduces two robust analytical pipelines—Batch and Real-time. The Batch processing pipeline encompasses data ingestion, Lake House architecture implementation, processing, and visualization using a powerful stack including Amazon Kinesis, Glue, S3, and QuickSight.
-
-- **Insights Generated:**
-  - Unique visitors per day
-  - User behavior analysis during specific time frames, focusing on instances where products are added to carts but not purchased.
-  - Top categories trending by hour or weekday for strategic promotional planning.
-  - Identifying brands that require intensified marketing efforts.
-
-#### Real-time Channel:
-The Real-time channel is dedicated to swiftly detecting and mitigating potential threats, specifically Distributed Denial of Service (DDoS) and Bot attacks. This is achieved through a dynamic combination of AWS Lambda, DynamoDB, CloudWatch, and AWS SNS.
-
-This repository serves as a testament to the fusion of data engineering expertise and eCommerce analytics, encapsulating the intricate dynamics of online customer engagement and security. Explore the codebase, delve into the pipelines, and uncover the depth of insights that can be gleaned from a well-crafted data strategy.
+This repository showcases the fusion of data engineering and eCommerce analytics, capturing the nuances of online customer engagement and security. Explore the codebase to unveil the depth of insights derived from a well-crafted data strategy.
 
 
 ## AWS Data Engineering Pipeline Architecture
