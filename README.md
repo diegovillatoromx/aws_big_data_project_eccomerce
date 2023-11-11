@@ -45,38 +45,19 @@ The business intelligence layer is supported by QuickSight, while AWS Glue DataB
 ![diagram](https://github.com/diegovillatoromx/aws_big_data_project_eccomerce/blob/main/ecomm_platform.png)
 
 The  key AWS services utilized are:
-### Amazon S3
+```css
+| Component             | Description                                                                                                         |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| Amazon S3             | Utilized as scalable object storage, forming the foundational layer for storing and retrieving data seamlessly in the data engineering pipeline.                              |
+| AWS Glue              | A serverless data integration service central to discovering, preparing, and integrating data for analytics and machine learning. Efficiently runs Spark/Python code. |
+| AWS Athena            | A serverless query service empowering interactive and efficient querying of data in Amazon S3 without the need for pre-loading. Supports multiple data formats, enhancing flexibility.    |
+| Apache Flink          | At the core of real-time data analytics, handling massive data streams and providing valuable insights in real-time. Excels in distributed computations over data streams.                 |
+| Amazon Kinesis        | In real-time data collection, processing, and transfer, Data Streams and Data Firehose play pivotal roles. Firehose simplifies delivery and supports data transformation in the pipeline.     |
+| QuickSight            | A scalable, serverless business intelligence (BI) layer connecting to various sources in the architecture. Pay-per-session pricing ensures cost-effectiveness for large-scale deployments.    |
+| AWS Glue DataBrew     | A visual tool expediting cleaning and normalization in the data preparation phase. Enhances the efficiency of data prep for downstream analytics and machine learning.                   |
+| Amazon DynamoDB       | A fully managed NoSQL database service seamlessly integrated into the pipeline architecture. Quick, predictable performance with seamless scaling and enhanced querying flexibility (PartiQL). |
 
-Utilized as scalable object storage, Amazon S3 forms the foundational layer for storing and retrieving data seamlessly throughout the data engineering pipeline.
-
-### AWS Glue
-
-As a serverless data integration service, AWS Glue takes center stage in discovering, preparing, and integrating data for analytics and machine learning. It efficiently runs Spark/Python code, ensuring a streamlined data processing flow.
-
-### AWS Athena
-
-Athena, a serverless query service, empowers interactive and efficient querying of data stored in Amazon S3 without the need for pre-loading. It supports multiple data formats, enhancing flexibility in analysis.
-
-### Apache Flink
-
-At the core of real-time data analytics, Apache Flink handles massive data streams, providing valuable insights in real-time. It excels in distributed computations over data streams within the architecture.
-
-### Amazon Kinesis
-
-Amazon Kinesis Data Streams and Kinesis Data Firehose play pivotal roles in real-time data collection, processing, and transfer. Kinesis Data Firehose simplifies the delivery process and supports data transformation within the pipeline.
-
-### QuickSight
-
-Amazon QuickSight serves as the scalable, serverless business intelligence (BI) layer, connecting to various sources in the architecture. Its pay-per-session pricing model ensures cost-effectiveness for large-scale deployments.
-
-### AWS Glue DataBrew
-
-In the data preparation phase, AWS Glue DataBrew, a visual tool, expedites cleaning and normalization activities. It plays a crucial role in enhancing the efficiency of data preparation for downstream analytics and machine learning.
-
-### Amazon DynamoDB
-
-Amazon DynamoDB, a fully managed NoSQL database service, seamlessly integrates into the pipeline architecture. Its quick and predictable performance, coupled with seamless scaling, ensures optimal handling of varied data loads. PartiQL support enhances the flexibility of querying data within DynamoDB.
-
+```
 
 ## Dataset
 
