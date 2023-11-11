@@ -1,5 +1,22 @@
 # Data Engineering Project: Empowering eCommerce with an Analytical Platform Built on AWS Services
-Ecommerce analytics is the process of collecting data from all of the sources that affect a certain shop. Analysts can then utilize this information to deduce changes in customer behavior and online shopping patterns. Ecommerce analytics spans the whole customer journey.
+
+Welcome to the Ecommerce Analytics project! As a seasoned Senior Data Engineer, I've developed this repository to showcase comprehensive insights derived from the intricate web of data influencing online shopping experiences. The project revolves around leveraging an eCommerce dataset to emulate user interactions—purchases, product views, cart activities, and the entire customer journey.
+
+## Key Components:
+
+### Analytical Pipelines:
+The project introduces two robust analytical pipelines—Batch and Real-time. The Batch processing pipeline encompasses data ingestion, Lake House architecture implementation, processing, and visualization using a powerful stack including Amazon Kinesis, Glue, S3, and QuickSight.
+
+- **Insights Generated:**
+  - Unique visitors per day
+  - User behavior analysis during specific time frames, focusing on instances where products are added to carts but not purchased.
+  - Top categories trending by hour or weekday for strategic promotional planning.
+  - Identifying brands that require intensified marketing efforts.
+
+### Real-time Channel:
+The Real-time channel is dedicated to swiftly detecting and mitigating potential threats, specifically Distributed Denial of Service (DDoS) and Bot attacks. This is achieved through a dynamic combination of AWS Lambda, DynamoDB, CloudWatch, and AWS SNS.
+
+This repository serves as a testament to the fusion of data engineering expertise and eCommerce analytics, encapsulating the intricate dynamics of online customer engagement and security. Explore the codebase, delve into the pipelines, and uncover the depth of insights that can be gleaned from a well-crafted data strategy.
 
 ## Table of Contents 
 
@@ -77,4 +94,6 @@ By combining these AWS services and technologies, our aim is to create a robust 
  ├── README.md
 ```
 
+## Contribution
+Feel free to contribute, share your thoughts, or utilize this project as a foundation for your data engineering endeavors. Happy coding!
 
