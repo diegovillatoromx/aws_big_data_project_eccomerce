@@ -2,22 +2,6 @@
 
 Welcome to the Ecommerce Analytics project! As a seasoned Senior Data Engineer, I've developed this repository to showcase comprehensive insights derived from the intricate web of data influencing online shopping experiences. The project revolves around leveraging an eCommerce dataset to emulate user interactions—purchases, product views, cart activities, and the entire customer journey.
 
-## Key Components:
-
-### Analytical Pipelines:
-The project introduces two robust analytical pipelines—Batch and Real-time. The Batch processing pipeline encompasses data ingestion, Lake House architecture implementation, processing, and visualization using a powerful stack including Amazon Kinesis, Glue, S3, and QuickSight.
-
-- **Insights Generated:**
-  - Unique visitors per day
-  - User behavior analysis during specific time frames, focusing on instances where products are added to carts but not purchased.
-  - Top categories trending by hour or weekday for strategic promotional planning.
-  - Identifying brands that require intensified marketing efforts.
-
-### Real-time Channel:
-The Real-time channel is dedicated to swiftly detecting and mitigating potential threats, specifically Distributed Denial of Service (DDoS) and Bot attacks. This is achieved through a dynamic combination of AWS Lambda, DynamoDB, CloudWatch, and AWS SNS.
-
-This repository serves as a testament to the fusion of data engineering expertise and eCommerce analytics, encapsulating the intricate dynamics of online customer engagement and security. Explore the codebase, delve into the pipelines, and uncover the depth of insights that can be gleaned from a well-crafted data strategy.
-
 ## Table of Contents 
 
 - [Description](#description) 
@@ -36,13 +20,25 @@ This repository serves as a testament to the fusion of data engineering expertis
 
 ## Description
 
-The primary objective of this project is to develop an Extract, Transform, Load (ETL) solution using AWS CDK for the analysis of traffic accident analysis and prediction data. This process involves the construction of a serverless pipeline, in which Lambda functions are employed for data extraction from an app simulation and subsequent streaming into Kinesis streams. Additionally, a standalone Lambda function will be created to consume data from the Kinesis stream, apply essential transformations, and store them in s3.
+A data pipeline serves as a sophisticated mechanism for seamlessly transporting data from one system to another. This process is dynamic, accommodating scenarios where data updates may or may not occur, and it operates in real-time or streaming mode rather than relying solely on batch processing.
 
-To conduct real-time data analytics within the Kinesis streams, we will utilize Apache Flink and Apache Zeppelin. These tools will empower us to extract insights and derive valuable information from the data. AWS serverless technologies, including Amazon Lambda and Amazon Glue, will be leveraged for efficient processing and transformation of data from three distinct data sources.
+The comprehensive scope of a data pipeline encompasses a series of stages, starting from the acquisition or harvesting of data through diverse methods. The journey continues with storing the raw data, followed by cleaning, validating, and transforming it into a format conducive to queries. The pipeline's responsibilities extend to showcasing Key Performance Indicators (KPIs) and overseeing the entire process.
 
-Furthermore, Amazon Athena, a query service, will be used to analyze the transformed data stored in S3. This will facilitate efficient querying and data exploration, enabling us to extract meaningful insights and make informed decisions based on traffic accident analysis and prediction data.
+***[The project](https://github.com/diegovillatoromx/aws_big_data_project_eccomerce/)*** introduces two robust analytical pipelines—Batch and Real-time. The Batch processing pipeline encompasses data ingestion, Lake House architecture implementation, processing, and visualization using a powerful stack including Amazon Kinesis, Glue, S3, and QuickSight.
 
-By combining these AWS services and technologies, our aim is to create a robust and scalable solution for cryptocurrency data analysis, enabling comprehensive data processing, transformation, and analysis.
+- **Insights Generated:**
+  - Unique visitors per day
+  - User behavior analysis during specific time frames, focusing on instances where products are added to carts but not purchased.
+  - Top categories trending by hour or weekday for strategic promotional planning.
+  - Identifying brands that require intensified marketing efforts.
+
+### Real-time Channel:
+The Real-time channel is dedicated to swiftly detecting and mitigating potential threats, specifically Distributed Denial of Service (DDoS) and Bot attacks. This is achieved through a dynamic combination of AWS Lambda, DynamoDB, CloudWatch, and AWS SNS.
+
+This repository serves as a testament to the fusion of data engineering expertise and eCommerce analytics, encapsulating the intricate dynamics of online customer engagement and security. Explore the codebase, delve into the pipelines, and uncover the depth of insights that can be gleaned from a well-crafted data strategy.
+
+In summary, a data pipeline is a multifaceted solution that orchestrates the flow of data, from its inception to a state where it is refined, organized, and ready for insightful analysis.
+
 
 ## Architecture
 
@@ -93,6 +89,18 @@ By combining these AWS services and technologies, our aim is to create a robust 
  │   ├── dynamodb_table_config.yaml
  ├── README.md
 ```
+
+## Dataset
+
+Dive into the intricacies of user behavior with this dataset, meticulously curated from a expansive multi-category online store. The dataset comprises crucial fields including `event_time`, `event_type`, `product_id`, `price`, and `user_id`. Each row in the file corresponds to one of the following event types:
+
+- **View**
+- **Cart**
+- **Removed from Cart**
+- **Purchase**
+
+Uncover valuable insights as you navigate through the wealth of user behavioral information, dissecting events that shape the online shopping experience.
+
 
 ## Contribution
 Feel free to contribute, share your thoughts, or utilize this project as a foundation for your data engineering endeavors. Happy coding!
