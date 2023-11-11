@@ -75,7 +75,6 @@ By combining these AWS services and technologies, our aim is to create a robust 
  │   ├── sns_alerts_config.yaml
  │   ├── dynamodb_table_config.yaml
  ├── README.md
-
 ```
 
 
