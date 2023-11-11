@@ -113,6 +113,22 @@ Uncover valuable insights as you navigate through the wealth of user behavioral 
 
 These initial steps are part of the infrastructure-building process and set the foundation for the development of the real-time data pipeline. The upcoming phases will address the creation of other key components using AWS CLI, followed by the automation of these processes using Boto3 in Python.
 
+### Methodology for Processing Two Data Streams with Apache Flink SQL
+
+#### Table Definition:
+
+- Use SQL statements to define the structures of the two tables representing the two data streams. In the provided example, these are `ecomm_user_activity_stream_1` and `ecomm_user_activity_stream_2`.
+- Specify the fields for each table, their data types, and any additional configurations such as primary keys, watermarks, and partitions.
+
+#### Connection to Data Streams:
+
+- Configure the tables to connect to the corresponding data streams. In the example, the 'kinesis' connector is used, specifying AWS region and other relevant parameters.
+
+#### Data Processing:
+
+- Use SQL statements to perform processing operations on the data from the two streams. In the example, an aggregation operation is performed on `ecomm_user_activity_stream_1`, and the results are inserted into `ecomm_user_activity_stream_2`.
+- Apply any additional processing logic based on your requirements, such as filtering, transformations, and data enrichment.
+
 
 ## Modular Code Overview
 ```arduino
