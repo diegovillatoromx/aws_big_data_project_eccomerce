@@ -6,7 +6,6 @@ Welcome to the Ecommerce Analytics project! As a seasoned Senior Data Engineer, 
 
 - [Description](#description) 
 - [Architecture](#architecture)
-- [Modular Code Overview](#modular-code-overview)
 - [Dataset](#Dataset)
 - [Modular Code Overview](#modular-code-overview)
 - [Methodology](#Methodology)
