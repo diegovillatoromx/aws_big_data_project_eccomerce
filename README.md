@@ -92,13 +92,13 @@ Dive into the intricacies of user behavior with this dataset, meticulously curat
 Uncover valuable insights as you navigate through the wealth of user behavioral information, dissecting events that shape the online shopping experience.
 
 ## Methodology
-### Creation of the Python Simulator (App)
+### I. Creation of the Python Simulator (App)
 
 1. **Creation of S3 Bucket for Ecommerce Dataset:**
    We will use AWS CLI to establish an S3 bucket that will act as the primary repository for the ecommerce dataset. This bucket will be crucial as the data source for our project.
 
 2. **Creation of Data Stream for Real-Time Data Ingestion:**
-   Using AWS CLI, we will configure a data stream responsible for receiving real-time data. This data stream will be the main avenue for continuous data ingestion.
+   Using AWS CLI, we will configure a data stream responsible for receiving real-time data `ecomm_user_activity_stream_1`. This data stream will be the main avenue for continuous data ingestion.
 
 3. **Development of the Python Simulator:**
    We will implement a Python script that simulates data generation for our project. This script will perform the following actions:
@@ -113,7 +113,7 @@ Uncover valuable insights as you navigate through the wealth of user behavioral 
 
 These initial steps are part of the infrastructure-building process and set the foundation for the development of the real-time data pipeline. The upcoming phases will address the creation of other key components using AWS CLI, followed by the automation of these processes using Boto3 in Python.
 
-### Methodology for Processing Two Data Streams with Apache Flink SQL
+### II. Methodology for Processing Two Data Streams with Apache Flink SQL
 
 #### Table Definition:
 
