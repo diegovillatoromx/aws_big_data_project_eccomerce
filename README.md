@@ -40,9 +40,47 @@ This repository serves as a testament to the fusion of data engineering expertis
 In summary, a data pipeline is a multifaceted solution that orchestrates the flow of data, from its inception to a state where it is refined, organized, and ready for insightful analysis.
 
 
-## Architecture
+## AWS Data Engineering Pipeline Architecture
 
+This AWS Data Engineering project showcases a robust and scalable pipeline architecture utilizing key AWS services. From efficient storage in Amazon S3 to serverless integration with AWS Glue, interactive querying with Athena, and real-time analytics with Apache Flink and Amazon Kinesis, each component plays a vital role.
+
+The business intelligence layer is supported by QuickSight, while AWS Glue DataBrew streamlines visual data preparation. Seamless integration with Amazon DynamoDB ensures quick and predictable performance, coupled with uninterrupted scalability. This summary highlights the synergy of AWS services across the pipeline flow, establishing a solid foundation for advanced analytics and informed decision-making.
 ![diagram](https://github.com/diegovillatoromx/aws_big_data_project_eccomerce/blob/main/ecomm_platform.png))
+
+The  key AWS services utilized are:
+### Amazon S3
+
+Utilized as scalable object storage, Amazon S3 forms the foundational layer for storing and retrieving data seamlessly throughout the data engineering pipeline.
+
+### AWS Glue
+
+As a serverless data integration service, AWS Glue takes center stage in discovering, preparing, and integrating data for analytics and machine learning. It efficiently runs Spark/Python code, ensuring a streamlined data processing flow.
+
+### AWS Athena
+
+Athena, a serverless query service, empowers interactive and efficient querying of data stored in Amazon S3 without the need for pre-loading. It supports multiple data formats, enhancing flexibility in analysis.
+
+### Apache Flink
+
+At the core of real-time data analytics, Apache Flink handles massive data streams, providing valuable insights in real-time. It excels in distributed computations over data streams within the architecture.
+
+### Amazon Kinesis
+
+Amazon Kinesis Data Streams and Kinesis Data Firehose play pivotal roles in real-time data collection, processing, and transfer. Kinesis Data Firehose simplifies the delivery process and supports data transformation within the pipeline.
+
+### QuickSight
+
+Amazon QuickSight serves as the scalable, serverless business intelligence (BI) layer, connecting to various sources in the architecture. Its pay-per-session pricing model ensures cost-effectiveness for large-scale deployments.
+
+### AWS Glue DataBrew
+
+In the data preparation phase, AWS Glue DataBrew, a visual tool, expedites cleaning and normalization activities. It plays a crucial role in enhancing the efficiency of data preparation for downstream analytics and machine learning.
+
+### Amazon DynamoDB
+
+Amazon DynamoDB, a fully managed NoSQL database service, seamlessly integrates into the pipeline architecture. Its quick and predictable performance, coupled with seamless scaling, ensures optimal handling of varied data loads. PartiQL support enhances the flexibility of querying data within DynamoDB.
+
+
 
 ## Modular Code Overview
 ```arduino
