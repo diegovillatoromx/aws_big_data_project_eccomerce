@@ -41,15 +41,13 @@ The Real-time channel is dedicated to swiftly detecting and mitigating potential
 
 This repository serves as a testament to the fusion of data engineering expertise and eCommerce analytics, encapsulating the intricate dynamics of online customer engagement and security. Explore the codebase, delve into the pipelines, and uncover the depth of insights that can be gleaned from a well-crafted data strategy.
 
-In summary, a data pipeline is a multifaceted solution that orchestrates the flow of data, from its inception to a state where it is refined, organized, and ready for insightful analysis.
-
 
 ## AWS Data Engineering Pipeline Architecture
 
 This AWS Data Engineering project showcases a robust and scalable pipeline architecture utilizing key AWS services. From efficient storage in Amazon S3 to serverless integration with AWS Glue, interactive querying with Athena, and real-time analytics with Apache Flink and Amazon Kinesis, each component plays a vital role.
 
 The business intelligence layer is supported by QuickSight, while AWS Glue DataBrew streamlines visual data preparation. Seamless integration with Amazon DynamoDB ensures quick and predictable performance, coupled with uninterrupted scalability. This summary highlights the synergy of AWS services across the pipeline flow, establishing a solid foundation for advanced analytics and informed decision-making.
-![diagram](https://github.com/diegovillatoromx/aws_big_data_project_eccomerce/blob/main/ecomm_platform.png))
+![diagram](https://github.com/diegovillatoromx/aws_big_data_project_eccomerce/blob/main/ecomm_platform.png)
 
 The  key AWS services utilized are:
 ### Amazon S3
