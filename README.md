@@ -3,7 +3,7 @@ Ecommerce analytics is the process of collecting data from all of the sources th
 
 ## Table of Contents 
 
-- [Description](#description)
+- [Description](#description) 
 - [Architecture](#architecture)
 - [Modular Code Overview](#modular-code-overview)
 - [Dataset](#Dataset)
