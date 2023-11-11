@@ -10,10 +10,6 @@ Welcome to the Ecommerce Analytics project! As a seasoned Senior Data Engineer, 
 - [Dataset](#Dataset)
 - [Methodology](#Methodology)
 - [Modular Code Overview](#modular-code-overview)
-- [Creating an AWS Cloud9 environment](#creating-an-AWS-Cloud9-environment)
-- [Adding Policies to the Associated EC2 Instance](#Adding-Policies-to-the-Associated-EC2-Instance)
-- [Setting up the enviroment](#setting-up-the-enviroment)
-- [Cloning GitHub repository to AWS Cloud9](#Cloning-GitHub-repository-to-AWS-Cloud9)
 - [Usage](#usage) 
 - [Contribution](#contribution)
 - [Contact](#contact)
@@ -83,6 +79,21 @@ In the data preparation phase, AWS Glue DataBrew, a visual tool, expedites clean
 Amazon DynamoDB, a fully managed NoSQL database service, seamlessly integrates into the pipeline architecture. Its quick and predictable performance, coupled with seamless scaling, ensures optimal handling of varied data loads. PartiQL support enhances the flexibility of querying data within DynamoDB.
 
 
+## Dataset
+
+This file contain behavior [data](https://www.kaggle.com/datasets/mkechinov/ecommerce-behavior-data-from-multi-category-store/data) for 7 months (from October 2019 to April 2020) from a large multi-category online store. Each row in the file represents an event. All events are related to products and users. Each event is like many-to-many relation between products and users.
+
+Dive into the intricacies of user behavior with this dataset, meticulously curated from a expansive multi-category online store. The dataset comprises crucial fields including `event_time`, `event_type`, `product_id`, `price`, and `user_id`. Each row in the file corresponds to one of the following event types:
+
+- **View**
+- **Cart**
+- **Removed from Cart**
+- **Purchase**
+
+Uncover valuable insights as you navigate through the wealth of user behavioral information, dissecting events that shape the online shopping experience.
+
+## Methodology
+
 
 ## Modular Code Overview
 ```arduino
@@ -130,20 +141,7 @@ Amazon DynamoDB, a fully managed NoSQL database service, seamlessly integrates i
  ├── README.md
 ```
 
-## Dataset
-
-This file contain behavior [data](https://www.kaggle.com/datasets/mkechinov/ecommerce-behavior-data-from-multi-category-store/data) for 7 months (from October 2019 to April 2020) from a large multi-category online store. Each row in the file represents an event. All events are related to products and users. Each event is like many-to-many relation between products and users.
-
-Dive into the intricacies of user behavior with this dataset, meticulously curated from a expansive multi-category online store. The dataset comprises crucial fields including `event_time`, `event_type`, `product_id`, `price`, and `user_id`. Each row in the file corresponds to one of the following event types:
-
-- **View**
-- **Cart**
-- **Removed from Cart**
-- **Purchase**
-
-Uncover valuable insights as you navigate through the wealth of user behavioral information, dissecting events that shape the online shopping experience.
-
-
+## Usage
 ## Contribution
 Feel free to contribute, share your thoughts, or utilize this project as a foundation for your data engineering endeavors. Happy coding!
 
