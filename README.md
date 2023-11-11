@@ -19,14 +19,14 @@ A data pipeline serves as a sophisticated mechanism for seamlessly transporting 
 The comprehensive scope of a data pipeline encompasses a series of stages, starting from the acquisition or harvesting of data through diverse methods. The journey continues with storing the raw data, followed by cleaning, validating, and transforming it into a format conducive to queries. The pipeline's responsibilities extend to showcasing Key Performance Indicators (KPIs) and overseeing the entire process.
 
 ```sql
-Key Components         | Description
----------------------- | ---------------------------------------------------------------------
-**Analytical Pipelines**| Introduces two robust pipelines—Batch and Real-time. The Batch processing pipeline involves data ingestion, Lake House architecture, processing, and visualization using Amazon Kinesis, Glue, S3, and QuickSight.
-**Insights Generated**  | - Unique daily visitors
-                         - User behavior analysis during specific time frames, focusing on cart additions without purchases.
-                         - Top categories trending hourly or by weekday for strategic promotions.
-                         - Identifying brands needing intensified marketing efforts.
-**Real-time Channel**   | Swiftly detects and mitigates potential threats, specifically DDoS and Bot attacks, using a dynamic combination of AWS Lambda, DynamoDB, CloudWatch, and AWS SNS.
+| Component             | Description                                                                                                         |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| **Analytical Pipelines** | Introduces two robust pipelines—Batch and Real-time. The Batch processing pipeline involves data ingestion, Lake House architecture, processing, and visualization using Amazon Kinesis, Glue, S3, and QuickSight. |
+| **Insights Generated**   | - Unique daily visitors
+                            - User behavior analysis during specific time frames, focusing on cart additions without purchases.
+                            - Top categories trending hourly or by weekday for strategic promotions.
+                            - Identifying brands needing intensified marketing efforts. |
+| **Real-time Channel**  | Swiftly detects and mitigates potential threats, specifically DDoS and Bot attacks, using a dynamic combination of AWS Lambda, DynamoDB, CloudWatch, and AWS SNS. |
 ```
 
 This repository showcases the fusion of data engineering and eCommerce analytics, capturing the nuances of online customer engagement and security. Explore the codebase to unveil the depth of insights derived from a well-crafted data strategy.
