@@ -38,9 +38,9 @@ This repository serves as a testament to the fusion of data engineering expertis
 
 ## AWS Data Engineering Pipeline Architecture
 
-This AWS Data Engineering project showcases a robust and scalable pipeline architecture utilizing key AWS services. From efficient storage in Amazon S3 to serverless integration with AWS Glue, interactive querying with Athena, and real-time analytics with Apache Flink and Amazon Kinesis, each component plays a vital role.
+This AWS Data Engineering project demonstrates a resilient and scalable pipeline architecture leveraging essential AWS services. Starting with efficient storage in Amazon S3 and progressing to serverless integration using AWS Glue, interactive querying via Athena, and real-time analytics powered by Apache Flink and Amazon Kinesis, each component plays a crucial role.
 
-The business intelligence layer is supported by QuickSight, while AWS Glue DataBrew streamlines visual data preparation. Seamless integration with Amazon DynamoDB ensures quick and predictable performance, coupled with uninterrupted scalability. This summary highlights the synergy of AWS services across the pipeline flow, establishing a solid foundation for advanced analytics and informed decision-making.
+The business intelligence layer is bolstered by QuickSight, while AWS Glue DataBrew streamlines visual data preparation. The seamless integration with Amazon DynamoDB ensures rapid and predictable performance, accompanied by uninterrupted scalability. This summary underscores the synergy of AWS services throughout the pipeline, establishing a robust foundation for advanced analytics and well-informed decision-making.
 ![diagram](https://github.com/diegovillatoromx/aws_big_data_project_eccomerce/blob/main/ecomm_platform.png)
 
 The  key AWS services utilized are:
