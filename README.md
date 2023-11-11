@@ -29,7 +29,7 @@ By combining these AWS services and technologies, our aim is to create a robust 
 
 ## Architecture
 
-![diagram](https://github.com/diegovillatoromx/flink-kinesis-streaming-pipeline/blob/main/images/flink_kinesis.png)
+![diagram](https://github.com/diegovillatoromx/aws_big_data_project_eccomerce/blob/main/ecomm_platform.png))
 
 ## Modular Code Overview
 ```arduino
