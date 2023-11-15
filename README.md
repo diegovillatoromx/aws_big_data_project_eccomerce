@@ -106,6 +106,34 @@ These initial steps are part of the infrastructure-building process and set the 
 - Apply any additional processing logic based on your requirements, such as filtering, transformations, and data enrichment.
 
 ### III. The analytic real-time Pipeline
+We will utilize an eCommerce dataset to simulate user interactions, including purchase logs, product views, cart history, and the user's online journey. Our goal is to establish two analytical pipelines: one for batch processing and another for real-time analytics.
+
+### Real-time Analytics Pipeline
+
+The real-time pipeline is designed to detect and mitigate Distributed Denial of Service (DDoS) and Bot attacks. The implementation leverages several AWS services:
+
+- **AWS Lambda:** Utilized for serverless computing and event-driven architecture.
+- **DynamoDB:** Employed as a NoSQL database for efficient data storage.
+- **CloudWatch:** Used for monitoring and logging activities.
+- **AWS SNS (Simple Notification Service):** Enables event-driven communication.
+
+##### Implementation Details
+
+1. **Lambda Functions:**
+   - Developed specific Lambda functions for DynamoDB and SNS to facilitate seamless communication and data handling.
+
+2. **DynamoDB Data Modeling:**
+   - Ensured proficient understanding and application of DynamoDB data modeling for optimal performance and scalability.
+
+3. **Lambda and Kinesis Integration:**
+   - Integrated Lambda functions with Kinesis for real-time data streaming and processing.
+
+4. **ETL Processes:**
+   - Executed Extract, Transform, Load (ETL) processes to convert data into Parquet format.
+   - Leveraged Glue DataBrew for data preparation and Spark for large-scale data processing.
+
+5. **QuickSight Dashboards:**
+   - Created QuickSight Dashboards to provide insightful visualizations and analytics based on the processed data.
 
 
 ## Modular Code Overview
