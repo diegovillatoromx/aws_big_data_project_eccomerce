@@ -105,7 +105,8 @@ These initial steps are part of the infrastructure-building process and set the 
 - Use SQL statements to perform processing operations on the data from the two streams. In the example, an aggregation operation is performed on `ecomm_user_activity_stream_1`, and the results are inserted into `ecomm_user_activity_stream_2`.
 - Apply any additional processing logic based on your requirements, such as filtering, transformations, and data enrichment.
 
-### III. Methodology for Processing Two Data Streams with Apache Flink SQL
+### III. The analytic real-time Pipeline
+
 
 ## Modular Code Overview
 ```arduino
