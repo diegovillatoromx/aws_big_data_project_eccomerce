@@ -1,6 +1,6 @@
 # Data Engineering Project: Empowering eCommerce with an Analytical Platform Built on AWS Services
 
-Welcome to the Ecommerce Analytics project! As a seasoned Senior Data Engineer, I've developed this repository to showcase comprehensive insights derived from the intricate web of data influencing online shopping experiences. The project revolves around leveraging an eCommerce dataset to emulate `user interactions—purchases`, `product views`, `cart activities`, and the entire `customer journey`.
+Welcome to the Ecommerce Analytics project! As a seasoned Senior Data Engineer, I've developed this repository to showcase comprehensive insights derived from the intricate web of data influencing online shopping experiences. The project revolves around leveraging an eCommerce dataset to emulate `user interactions—purchases`, `product views`, `cart activities`, and the entire `customer journey`. 
 
 ## Table of Contents 
 
