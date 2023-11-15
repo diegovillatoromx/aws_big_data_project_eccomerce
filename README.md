@@ -105,10 +105,8 @@ These initial steps are part of the infrastructure-building process and set the 
 - Use SQL statements to perform processing operations on the data from the two streams. In the example, an aggregation operation is performed on `ecomm_user_activity_stream_1`, and the results are inserted into `ecomm_user_activity_stream_2`.
 - Apply any additional processing logic based on your requirements, such as filtering, transformations, and data enrichment.
 
-### III. The analytic real-time Pipeline
+### III. Real-time Analytics Pipeline
 We will utilize an eCommerce dataset to simulate user interactions, including purchase logs, product views, cart history, and the user's online journey. Our goal is to establish two analytical pipelines: one for batch processing and another for real-time analytics.
-
-### Real-time Analytics Pipeline
 
 The real-time pipeline is designed to detect and mitigate Distributed Denial of Service (DDoS) and Bot attacks. The implementation leverages several AWS services:
 
