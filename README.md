@@ -120,7 +120,7 @@ The real-time pipeline is designed to detect and mitigate Distributed Denial of 
 1. **Lambda Functions:**
    - Developed specific Lambda functions for DynamoDB and SNS to facilitate seamless communication and data handling.
 
-2. **DynamoDB Data Modeling:**
+2. **DynamoDB Data Modeling:** 
    - Ensured proficient understanding and application of DynamoDB data modeling for optimal performance and scalability.
 
 3. **Lambda and Kinesis Integration:**
