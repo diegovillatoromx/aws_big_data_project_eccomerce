@@ -178,7 +178,7 @@ To operationalize this imperative, consider the following strategic steps:
  │   ├── kinesis_stream_1_config.yaml
  │   ├── python_simulator_config.yaml
  ├── images/
- │   ├── diagrama_ejemplo.png
+ │   ├── ecomm_platform.png
  ├── README.md
 
 ```
