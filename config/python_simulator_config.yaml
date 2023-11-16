@@ -1,0 +1,14 @@
+# python_simulator_config.yaml
+
+aws_settings:
+  aws_region: 'us-east-1'
+  aws_account_id: '731613642368'
+  env: 'dev'
+  company: 'ecommerce'
+  stream_suffix: 'stream-1'
+
+kinesis_settings:
+  kinesis_stream_name: f"{aws_settings['company']}-raw-{aws_settings['aws_region']}-{aws_settings['aws_account_id']}-{aws_settings['env']}-{aws_settings['stream_suffix']}"
+
+s3_settings:
+  s3_bucket_name: f"{aws_settings['company']}-raw-{aws_settings['aws_region']}-{aws_settings['aws_account_id']}-{aws_settings['env']}"
