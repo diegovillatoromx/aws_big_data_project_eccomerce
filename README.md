@@ -161,6 +161,9 @@ To operationalize this imperative, consider the following strategic steps:
  │   │   ├── data_simulation/
  │   │   │   ├── python_simulator/
  │   │   │   │   ├── python_simulator.py
+ ├── data_ingestion/
+ │   ├── kinesis/
+ │   │   ├── data_stream_1_configuration.json
  ├── infrastructure/
  │   ├── s3_bucket/
  │   │   ├── s3_bucket_dataset_configuration.json
@@ -174,6 +177,8 @@ To operationalize this imperative, consider the following strategic steps:
  │   ├── s3_dataset_bucket_config.yaml
  │   ├── kinesis_stream_1_config.yaml
  │   ├── python_simulator_config.yaml
+ ├── images/
+ │   ├── diagrama_ejemplo.png
  ├── README.md
 
 ```
