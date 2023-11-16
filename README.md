@@ -200,7 +200,6 @@ To operationalize this imperative, consider the following strategic steps:
  ├── README.md
 ```
 
-## Usage
 ## Contribution
 Feel free to contribute, share your thoughts, or utilize this project as a foundation for your data engineering endeavors. Happy coding!
 
