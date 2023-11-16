@@ -156,48 +156,29 @@ To operationalize this imperative, consider the following strategic steps:
 
 ## Modular Code Overview
 ```arduino
- ├── src/
- │   ├── stream_1_producer/
- │   │   ├── your_stream_1_producer.py
- ├── s3_firehose/
- │   ├── firehose_to_s3_delivery_stream/
- │   │   ├── your_firehose_to_s3_delivery_stream_config.json
- ├── kinesis_analytics/
- │   ├── stream_1_to_stream_2_application/
- │   │   ├── your_stream_1_to_stream_2_application.sql
- ├── glue_catalog/
- │   ├── glue_job/
- │   │   ├── your_glue_job_script.py
- ├── lambda/
- │   ├── stream_2_processing_lambda/
- │   │   ├── your_stream_2_processing_lambda.py
- ├── cloudwatch_dashboard/
- │   ├── your_dashboard_config.json
- ├── sns/
- │   ├── sns_alerts/
- │   │   ├── your_sns_alerts_config.json
- ├── dynamodb/
- │   ├── dynamodb_table/
- │   │   ├── your_dynamodb_table_config.json
- ├── scripts/
- │   ├── deploy_stream_1_producer.sh
- │   ├── deploy_firehose_to_s3.sh
- │   ├── deploy_stream_1_to_stream_2_application.sh
- │   ├── deploy_glue_job.sh
- │   ├── deploy_stream_2_processing_lambda.sh
- │   ├── deploy_dashboard.sh
- │   ├── deploy_sns_alerts.sh
- │   ├── deploy_dynamodb_table.sh
+ ├── analytics_platform/
+ │   ├── src/
+ │   │   ├── data_simulation/
+ │   │   │   ├── python_simulator/
+ │   │   │   │   ├── python_simulator.py
+ │   ├── data_ingestion/
+ │   │   ├── kinesis/
+ │   │   │   ├── data_stream_1_configuration.json
+ ├── infrastructure/
+ │   ├── s3_bucket/
+ │   │   ├── s3_bucket_dataset_configuration.json
+ │   ├── kinesis_stream/
+ │   │   ├── kinesis_stream_1_configuration.json
+ ├── deployment_scripts/
+ │   ├── deploy_s3_dataset_bucket.sh
+ │   ├── deploy_kinesis_stream_1.sh
+ │   ├── deploy_python_simulator.sh
  ├── config/
- │   ├── stream_1_producer_config.yaml
- │   ├── firehose_to_s3_config.yaml
- │   ├── stream_1_to_stream_2_application_config.yaml
- │   ├── glue_job_config.yaml
- │   ├── stream_2_processing_lambda_config.yaml
- │   ├── dashboard_config.yaml
- │   ├── sns_alerts_config.yaml
- │   ├── dynamodb_table_config.yaml
+ │   ├── s3_dataset_bucket_config.yaml
+ │   ├── kinesis_stream_1_config.yaml
+ │   ├── python_simulator_config.yaml
  ├── README.md
+
 ```
 
 ## Contribution
