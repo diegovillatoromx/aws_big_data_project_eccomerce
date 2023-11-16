@@ -1,0 +1,3 @@
+s3_bucket_name: your-ecommerce-dataset-bucket
+kinesis_stream_name: your-kinesis-stream
+region: your-aws-region

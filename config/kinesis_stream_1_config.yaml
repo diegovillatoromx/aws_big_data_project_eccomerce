@@ -1,0 +1,3 @@
+kinesis_stream_name: ecommerce-raw-us-east-1-14317-dev-stream-1
+region: us-east-1
+streaming_partition_key: category_id
