@@ -17,7 +17,7 @@ Welcome to the Ecommerce Analytics project! As a seasoned Senior Data Engineer, 
 A data pipeline serves as a sophisticated mechanism for seamlessly transporting data from one system to another. This process is dynamic, accommodating scenarios where data updates may or may not occur, and it operates in real-time or streaming mode rather than relying solely on batch processing.
 
 The comprehensive scope of a data pipeline encompasses a series of stages, starting from the acquisition or harvesting of data through diverse methods. The journey continues with storing the raw data, followed by cleaning, validating, and transforming it into a format conducive to queries. The pipeline's responsibilities extend to showcasing Key Performance Indicators (KPIs) and overseeing the entire process.
-
+ 
 ```sql
 | Component             | Description                                                                                                         |
 | --------------------- | ------------------------------------------------------------------------------------------------------------------- |
