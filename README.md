@@ -156,18 +156,16 @@ To operationalize this imperative, consider the following strategic steps:
 
 ## Modular Code Overview
 ```arduino
- ├── analytics_platform/
+ ├── infrastructure/
  │   ├── kinesis_analytics_script/
  │   │   ├── ecomm_user_activity_processing_script.sql
- ├── data_simulation/
- │   ├── python_simulator/
- │   │   ├── python_simulator.py
- ├── infrastructure/
  │   ├── data_ingestion/
  │   │   ├── kinesis/
  │   │   │   ├── data_stream_1_configuration.json
  │   │   ├── s3_bucket/
  │   │   │   ├── s3_bucket_dataset_configuration.json
+ │   │   ├── data_simulation/
+ │   │   │   ├── python_simulator.py
  ├── deployment_scripts/
  │   ├── deploy_s3_dataset_bucket.sh
  │   ├── deploy_kinesis_stream_1.sh
