@@ -156,26 +156,33 @@ To operationalize this imperative, consider the following strategic steps:
 
 ## Modular Code Overview
 ```arduino
- ├── infrastructure/
- │   ├── kinesis_analytics_script/
- │   │   ├── ecomm_user_activity_processing_script.sql
+ ├── src/
  │   ├── data_ingestion/
- │   │   ├── kinesis/
- │   │   │   ├── data_stream_1_configuration.json
- │   │   ├── s3_bucket/
- │   │   │   ├── s3_bucket_dataset_configuration.json
- │   │   ├── data_simulation/
- │   │   │   ├── python_simulator.py
- ├── deployment_scripts/
+ │   │   ├── python_simulator.py
+ │   ├── real-time_analytics_pipeline/
+ │   │   ├── ecomm_user_activity_processing_script.sql
+ │   ├── mitigating_DDoS_and_Bot_attacks/
+ │   │   ├── lambda_ddos_bot_mitigation.py
+ ├── infrastructure/
  │   ├── deploy_s3_dataset_bucket.sh
  │   ├── deploy_kinesis_stream_1.sh
+ │   ├── deploy_kinesis_stream_2.sh
  │   ├── deploy_kinesis_analytics.sh
  │   ├── deploy_python_simulator.sh
+ │   ├── deploy_lambda_ddos_bot_mitigation.sh
+ │   ├── deploy_dynamodb_table.sh
+ │   ├── deploy_cloudwatch_dashboard.sh
+ │   ├── deploy_sns_alerts.sh
  ├── config/
- │   ├── s3_dataset_bucket_config.yaml
- │   ├── kinesis_stream_1_config.yaml
- │   ├── kinesis_analytics_config.yaml
- │   ├── python_simulator_config.yaml
+ │   │   ├── s3_dataset_bucket_config.yaml
+ │   │   ├── kinesis_stream_1_config.yaml
+ │   │   ├── kinesis_stream_2_config.yaml
+ │   │   ├── kinesis_analytics_config.yaml
+ │   │   ├── python_simulator_config.yaml
+ │   │   ├── lambda_ddos_bot_mitigation_config.yaml
+ │   │   ├── dynamodb_table_config.yaml
+ │   │   ├── cloudwatch_dashboard_config.yaml
+ │   │   ├── sns_alerts_config.yaml
  ├── images/
  │   ├── ecomm_platform.png
  ├── README.md
