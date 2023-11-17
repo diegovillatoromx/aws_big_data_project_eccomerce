@@ -157,30 +157,30 @@ To operationalize this imperative, consider the following strategic steps:
 ## Modular Code Overview
 ```arduino
  ├── analytics_platform/
- │   ├── src/
- │   │   ├── data_simulation/
- │   │   │   ├── python_simulator/
- │   │   │   │   ├── python_simulator.py
- ├── data_ingestion/
- │   ├── kinesis/
- │   │   ├── data_stream_1_configuration.json
+ │   ├── kinesis_analytics_script/
+ │   │   ├── ecomm_user_activity_processing_script.sql
+ ├── data_simulation/
+ │   ├── python_simulator/
+ │   │   ├── python_simulator.py
  ├── infrastructure/
- │   ├── s3_bucket/
- │   │   ├── s3_bucket_dataset_configuration.json
- │   ├── kinesis_stream/
- │   │   ├── kinesis_stream_1_configuration.json
+ │   ├── data_ingestion/
+ │   │   ├── kinesis/
+ │   │   │   ├── data_stream_1_configuration.json
+ │   │   ├── s3_bucket/
+ │   │   │   ├── s3_bucket_dataset_configuration.json
  ├── deployment_scripts/
  │   ├── deploy_s3_dataset_bucket.sh
  │   ├── deploy_kinesis_stream_1.sh
+ │   ├── deploy_kinesis_analytics.sh
  │   ├── deploy_python_simulator.sh
  ├── config/
  │   ├── s3_dataset_bucket_config.yaml
  │   ├── kinesis_stream_1_config.yaml
+ │   ├── kinesis_analytics_config.yaml
  │   ├── python_simulator_config.yaml
  ├── images/
  │   ├── ecomm_platform.png
  ├── README.md
-
 ```
 
 ## Contribution
