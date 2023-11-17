@@ -173,6 +173,8 @@ To operationalize this imperative, consider the following strategic steps:
  │   ├── deploy_dynamodb_table.sh
  │   ├── deploy_cloudwatch_dashboard.sh
  │   ├── deploy_sns_alerts.sh
+ │   ├── deploy_s3_raw_ssto_parquet_bucket.sh
+ │   ├── deploy_kinesis_firehose.sh
  ├── config/
  │   │   ├── s3_dataset_bucket_config.yaml
  │   │   ├── kinesis_stream_1_config.yaml
@@ -183,6 +185,8 @@ To operationalize this imperative, consider the following strategic steps:
  │   │   ├── dynamodb_table_config.yaml
  │   │   ├── cloudwatch_dashboard_config.yaml
  │   │   ├── sns_alerts_config.yaml
+ │   │   ├── s3_raw_ssto_parquet_bucket_config.yaml
+ │   │   ├── kinesis_firehose_config.yaml
  ├── images/
  │   ├── ecomm_platform.png
  ├── README.md
