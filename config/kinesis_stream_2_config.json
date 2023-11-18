@@ -1,0 +1,11 @@
+{
+  "aws_settings": {
+    "aws_region": "us-east-1"
+  },
+  "kinesis_settings": {
+    "stream_name": "ecommerce-raw-us-east-1-731613642368-dev-stream-2",
+    "shard_count": 1,
+    "retention_period_hours": 24,
+    "capacityMode": "on-demand"
+  }
+}
