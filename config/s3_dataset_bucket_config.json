@@ -1,0 +1,12 @@
+{
+  "s3_settings": {
+    "s3_bucket_name": "ecommerce-raw-731613642368-dev-s3",
+    "acl": "private",
+    "block_public_access": true,
+    "versioning_enabled": false,
+    "default_encryption": false,
+    "create_bucket_configuration": {
+      "LocationConstraint": "us-east-1"
+    }
+  }
+}

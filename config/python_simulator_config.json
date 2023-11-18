@@ -1,0 +1,13 @@
+{
+  "aws_settings": {
+    "aws_region": "us-east-1"
+  },
+  "kinesis_settings": {
+    "kinesis_stream_name": "ecommerce-raw-us-east-1-731613642368-dev-stream-1"
+  },
+  "s3_settings": {
+    "s3_bucket_name": "ecommerce-raw-731613642368-dev-s3",
+    "csv_file_key": "ecomm_user_activity/2019-Nov.csv"
+  },
+  "streaming_partition_key": "category_id"
+}
