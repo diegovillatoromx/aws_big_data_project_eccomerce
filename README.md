@@ -179,14 +179,14 @@ To operationalize this imperative, consider the following strategic steps:
  │   │   ├── s3_dataset_bucket_config.json
  │   │   ├── kinesis_stream_1_config.json
  │   │   ├── kinesis_stream_2_config.json
- │   │   ├── kinesis_analytics_config.yaml
- │   │   ├── python_simulator_config.yaml
- │   │   ├── lambda_mitigation_config.yaml
- │   │   ├── dynamodb_table_config.yaml
- │   │   ├── cloudwatch_dashboard_config.yaml
- │   │   ├── sns_alerts_config.yaml
- │   │   ├── s3_raw_ssto_parquet_bucket_config.yaml
- │   │   ├── kinesis_firehose_config.yaml
+ │   │   ├── kinesis_analytics_config.json
+ │   │   ├── python_simulator_config.json
+ │   │   ├── lambda_mitigation_config.json
+ │   │   ├── dynamodb_table_config.json
+ │   │   ├── cloudwatch_dashboard_config.json
+ │   │   ├── sns_alerts_config.json
+ │   │   ├── s3_raw_ssto_parquet_bucket_config.json
+ │   │   ├── kinesis_firehose_config.json
  ├── images/
  │   ├── ecomm_platform.png
  ├── README.md
