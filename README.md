@@ -160,7 +160,7 @@ To operationalize this imperative, consider the following strategic steps:
  │   ├── data_ingestion/
  │   │   ├── python_simulator.py
  │   ├── real-time_analytics_pipeline/
- │   │   ├── ecomm_user_activity_processing_script.sql
+ │   │   ├── ecomm_user_activity.sql
  │   ├── mitigating_DDoS_and_Bot_attacks/
  │   │   ├── lambda_mitigation.py
  ├── infrastructure/
