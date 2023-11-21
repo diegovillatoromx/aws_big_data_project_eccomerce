@@ -93,12 +93,12 @@ Uncover valuable insights as you navigate through the wealth of user behavioral 
 3. **Creation of Data Stream for Real-Time Data Ingestion:**
    Using AWS CLI, we will configure a data stream responsible for receiving real-time data `ecomm_user_activity_stream_1`. This data stream will be the main avenue for continuous data ingestion. Second, we have to deploy `deploy_kinesis_stream_2.sh` to do this, you have to navigate:
    ```python
-   infrastructure/deploy_kinesis_stream_2.sh
+   infrastructure/deploy_kinesis_stream_1.sh
    ```
    We establish the S3 bucket in AWS using AWS CLI
    ```terminal
-   chmod +x deploy_kinesis_stream_2.sh
-   ./deploy_kinesis_stream_2.sh
+   chmod +x deploy_kinesis_stream_1.sh
+   ./deploy_kinesis_stream_1.sh
    ```
 
 4. **Development of the Python Simulator:**
