@@ -86,9 +86,10 @@ Uncover valuable insights as you navigate through the wealth of user behavioral 
    ```
    In order to make this dataset accessible within our AWS environment, it's necessary to copy the downloaded file from your local machine to an S3 bucket. We have a specific S3 bucket named `'ecommerce-raw-731613642368-dev-s3'` that has been created for this purpose. Additionally, a folder within the bucket named `'ecomm_user_raw_dataset'` has been set up. You can use the AWS Command Line Interface (CLI) to upload the file to the S3 bucket with the following command:
    ```bash
-   kaggle datasets download -d mkechinov/ecommerce-behavior-data-from-multi-category-store
+   aws s3 cp <local-file-path> s3://ecommerce-raw-731613642368-dev-s3/ecomm_user_raw_dataset/
    ```
-
+   Make sure to replace `<local-file-path>` with the actual path to the downloaded dataset on your local machine. Once the file is copied to the S3 bucket, it will be accessible for further data processing and analysis within our AWS environment.
+   
 3. **Creation of Data Stream for Real-Time Data Ingestion:**
    Using AWS CLI, we will configure a data stream responsible for receiving real-time data `ecomm_user_activity_stream_1`. This data stream will be the main avenue for continuous data ingestion. Second, we have to deploy `deploy_kinesis_stream_2.sh` to do this, you have to navigate:
    ```python
