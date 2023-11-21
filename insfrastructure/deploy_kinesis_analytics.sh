@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Load variables from JSON configuration file
-config_file="./config/config.json"
+config_file="./config/kinesis_analytics_config.json"
 
 # Extract values from JSON file using jq
 aws_account_id=$(jq -r '.aws_settings.aws_account_id' "$config_file")
