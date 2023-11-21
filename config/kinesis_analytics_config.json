@@ -1,0 +1,12 @@
+{
+  "aws_settings": {
+    "aws_account_id": "731613642368",
+    "aws_region": "us-east-1"
+  },
+  "analytics_settings": {
+    "app_name": "ecommerce_user_activity_analytics",
+    "input_stream": "ecommerce-raw-us-east-1-731613642368-dev-stream-1",
+    "output_stream": "ecommerce-raw-us-east-1-731613642368-dev-stream-2"
+    // Add other necessary settings
+  }
+}
