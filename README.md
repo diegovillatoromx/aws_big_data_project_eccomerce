@@ -71,10 +71,14 @@ Uncover valuable insights as you navigate through the wealth of user behavioral 
 ### I. Creation of the Python Simulator (App)
 
 1. **Creation of S3 Bucket for Ecommerce Dataset:**
-   We will use AWS CLI to establish an S3 bucket that will act as the primary repository for the ecommerce dataset. This bucket will be crucial as the data source for our project.
-
+   We will use AWS CLI to establish an S3 bucket that will act as the primary repository for the ecommerce dataset. This bucket will be crucial as the data source for our project. First, we have to deploy `deploy_s3_dataset_bucket.sh` to do this, you have to navigate:
+   ```python
+   infrastructure/deploy_s3_dataset_bucket.sh
+   ```
+   We establish the S3 bucket in AWS using AWS CLI
    ```terminal
-   s
+   chmod +x deploy_s3_dataset_bucket.sh
+   ./deploy_s3_dataset_bucket.sh
    ```
 
 3. **Creation of Data Stream for Real-Time Data Ingestion:**
