@@ -5,7 +5,7 @@ from time import sleep
 from datetime import datetime
 
 # Load configurations from the JSON file
-with open('python_simulator_config.json', 'r') as config_file:
+with open('config/python_simulator_config.json', 'r') as config_file:
     config = json.load(config_file)
 
 # Get variables from the configuration file
