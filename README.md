@@ -73,18 +73,22 @@ Uncover valuable insights as you navigate through the wealth of user behavioral 
 1. **Creation of S3 Bucket for Ecommerce Dataset:**
    We will use AWS CLI to establish an S3 bucket that will act as the primary repository for the ecommerce dataset. This bucket will be crucial as the data source for our project.
 
-2. **Creation of Data Stream for Real-Time Data Ingestion:**
+   ```terminal
+   s
+   ```
+
+3. **Creation of Data Stream for Real-Time Data Ingestion:**
    Using AWS CLI, we will configure a data stream responsible for receiving real-time data `ecomm_user_activity_stream_1`. This data stream will be the main avenue for continuous data ingestion.
 
-3. **Development of the Python Simulator:**
+4. **Development of the Python Simulator:**
    We will implement a Python script that simulates data generation for our project. This script will perform the following actions:
    - Extract data from the dataset stored in the newly created S3 bucket.
    - Send simulated data to the data stream, simulating continuous real-time data ingestion.
 
-4. **Execution of the Simulator:**
+5. **Execution of the Simulator:**
    We will execute the Python simulation script to verify the correct extraction of data from the S3 bucket and its successful transmission to the data stream.
 
-5. **Validation in AWS Console:**
+6. **Validation in AWS Console:**
    We will check the AWS console to ensure that the S3 bucket contains ecommerce data and that the data stream is receiving data from the Python simulator.
 
 These initial steps are part of the infrastructure-building process and set the foundation for the development of the real-time data pipeline. The upcoming phases will address the creation of other key components using AWS CLI, followed by the automation of these processes using Boto3 in Python.
