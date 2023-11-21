@@ -80,8 +80,15 @@ Uncover valuable insights as you navigate through the wealth of user behavioral 
    chmod +x deploy_s3_dataset_bucket.sh
    ./deploy_s3_dataset_bucket.sh
    ```
+   The dataset [data](https://www.kaggle.com/datasets/mkechinov/ecommerce-behavior-data-from-multi-category-store/data) is available for download either from Kaggle or directly through the terminal. To obtain it, you can use the following command in your terminal:
+   ```bash
+   kaggle datasets download -d sobhanmoosavi/us-accidents
+   ```
+   In order to make this dataset accessible within our AWS environment, it's necessary to copy the downloaded file from your local machine to an S3 bucket. We have a specific S3 bucket named `'ecommerce-raw-731613642368-dev-s3'` that has been created for this purpose. Additionally, a folder within the bucket named `'ecomm_user_raw_dataset'` has been set up.
 
-2. **Creation of Data Stream for Real-Time Data Ingestion:**
+
+
+3. **Creation of Data Stream for Real-Time Data Ingestion:**
    Using AWS CLI, we will configure a data stream responsible for receiving real-time data `ecomm_user_activity_stream_1`. This data stream will be the main avenue for continuous data ingestion. Second, we have to deploy `deploy_kinesis_stream_2.sh` to do this, you have to navigate:
    ```python
    infrastructure/deploy_kinesis_stream_2.sh
@@ -92,15 +99,15 @@ Uncover valuable insights as you navigate through the wealth of user behavioral 
    ./deploy_kinesis_stream_2.sh
    ```
 
-3. **Development of the Python Simulator:**
+4. **Development of the Python Simulator:**
    We will implement a Python script that simulates data generation for our project. This script will perform the following actions:
    - Extract data from the dataset stored in the newly created S3 bucket.
    - Send simulated data to the data stream, simulating continuous real-time data ingestion.
 
-4. **Execution of the Simulator:**
+5. **Execution of the Simulator:**
    We will execute the Python simulation script to verify the correct extraction of data from the S3 bucket and its successful transmission to the data stream.
 
-5. **Validation in AWS Console:**
+6. **Validation in AWS Console:**
    We will check the AWS console to ensure that the S3 bucket contains ecommerce data and that the data stream is receiving data from the Python simulator.
 
 These initial steps are part of the infrastructure-building process and set the foundation for the development of the real-time data pipeline. The upcoming phases will address the creation of other key components using AWS CLI, followed by the automation of these processes using Boto3 in Python.
