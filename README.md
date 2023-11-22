@@ -106,10 +106,25 @@ Uncover valuable insights as you navigate through the wealth of user behavioral 
    - Extract data from the dataset stored in the newly created S3 bucket.
    - Send simulated data to the data stream, simulating continuous real-time data ingestion.
 
-5. **Execution of the Simulator:**
+   First of all, you have to create an IAM Role:
+   1. Go to the [IAM console](https://console.aws.amazon.com/iam/).
+   2. In the navigation pane, choose `"Roles"` and then click on the `"Create role"` button.
+   3. For `"Select type of trusted entity"` choose `"AWS service"`
+   4. Under `"Choose a use case"` find and select `"EC2"` even if you're not using EC2 directly. This is a common option for roles used locally.
+   5. Click `"Next: Permissions"`
+   6. In the `"Permissions"` step, attach the necessary policies to the role. For example, if you need access to S3 and Kinesis, you can attach policies like `"AmazonS3FullAccess"` and `"AmazonKinesisFullAccess"`. You can search for these policies and select them.
+   7. Click `"Next: Tags"` if you want to add tags, otherwise, click `"Next: Review"`
+   8. Provide a name for your role in the `"Role name"` field.
+   9. Optionally, you can provide a description for the role.
+   10. Click `"Create role"`
+   
+   Now you have successfully created an IAM role. This role can be assumed by your code to obtain temporary credentials. Remember to configure your AWS CLI or SDK to use this role when running your Python script.
+
+
+6. **Execution of the Simulator:**
    We will execute the Python simulation script to verify the correct extraction of data from the S3 bucket and its successful transmission to the data stream.
 
-6. **Validation in AWS Console:**
+7. **Validation in AWS Console:**
    We will check the AWS console to ensure that the S3 bucket contains ecommerce data and that the data stream is receiving data from the Python simulator.
 
 These initial steps are part of the infrastructure-building process and set the foundation for the development of the real-time data pipeline. The upcoming phases will address the creation of other key components using AWS CLI, followed by the automation of these processes using Boto3 in Python.
