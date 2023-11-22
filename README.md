@@ -144,6 +144,13 @@ Uncover valuable insights as you navigate through the wealth of user behavioral 
    ```bash
    aws s3 ls --profile my_profile
    ```
+   For boto3 in Python:
+   ```python
+   import boto3
+   session = boto3.Session(profile_name='my_profile')
+   s3_client = session.client('s3')
+   # Now you can use s3_client to interact with S3 using the my_profile profile.
+   ```
 
 
 6. **Execution of the Simulator:**
