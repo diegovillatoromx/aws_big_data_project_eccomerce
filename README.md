@@ -215,6 +215,12 @@ CREATE TABLE ecomm_user_activity_stream_2 (
 #### Connection to Data Streams:
 
 - Configure the tables to connect to the corresponding data streams. In the example, the 'kinesis' connector is used, specifying AWS region and other relevant parameters.
+
+#### Data Processing:
+
+- Use SQL statements to perform processing operations on the data from the two streams. In the example, an aggregation operation is performed on `ecomm_user_activity_stream_1`, and the results are inserted into `ecomm_user_activity_stream_2`.
+- Apply any additional processing logic based on your requirements, such as filtering, transformations, and data enrichment.
+
 ```sql
 -- Inserting aggregation into Stream 2
 INSERT INTO ecomm_user_activity_stream_2
@@ -223,12 +229,6 @@ FROM ecomm_user_activity_stream_1
 GROUP BY TUMBLE(txn_timestamp, INTERVAL '10' SECOND), user_id
 HAVING COUNT(1) > 1;
 ```
-
-
-#### Data Processing:
-
-- Use SQL statements to perform processing operations on the data from the two streams. In the example, an aggregation operation is performed on `ecomm_user_activity_stream_1`, and the results are inserted into `ecomm_user_activity_stream_2`.
-- Apply any additional processing logic based on your requirements, such as filtering, transformations, and data enrichment.
 
 ### III. Analytics on Dahsboard 
 We will utilize an eCommerce dataset to simulate user interactions, including purchase logs, product views, cart history, and the user's online journey. Our goal is to establish two analytical pipelines: one for batch processing and another for real-time analytics.
