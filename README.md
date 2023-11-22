@@ -210,7 +210,12 @@ CREATE TABLE ecomm_user_activity_stream_2 (
   'format' = 'json',
   'json.timestamp-format.standard' = 'ISO-8601'
 );
+```
 
+#### Connection to Data Streams:
+
+- Configure the tables to connect to the corresponding data streams. In the example, the 'kinesis' connector is used, specifying AWS region and other relevant parameters.
+```sql
 -- Inserting aggregation into Stream 2
 INSERT INTO ecomm_user_activity_stream_2
 SELECT user_id, COUNT(1) AS num_actions_per_watermark
@@ -219,9 +224,6 @@ GROUP BY TUMBLE(txn_timestamp, INTERVAL '10' SECOND), user_id
 HAVING COUNT(1) > 1;
 ```
 
-#### Connection to Data Streams:
-
-- Configure the tables to connect to the corresponding data streams. In the example, the 'kinesis' connector is used, specifying AWS region and other relevant parameters.
 
 #### Data Processing:
 
