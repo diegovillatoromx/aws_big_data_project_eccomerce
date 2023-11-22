@@ -107,6 +107,7 @@ Uncover valuable insights as you navigate through the wealth of user behavioral 
    - Send simulated data to the data stream, simulating continuous real-time data ingestion.
 
    First of all, you have to create an IAM Role:
+   #### Create an IAM Role:
    1. Go to the [IAM console](https://console.aws.amazon.com/iam/).
    2. In the navigation pane, choose `"Roles"` and then click on the `"Create role"` button.
    3. For `"Select type of trusted entity"` choose `"AWS service"`
