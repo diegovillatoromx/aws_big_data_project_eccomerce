@@ -11,7 +11,7 @@ Welcome to the Ecommerce Analytics project! As a seasoned Senior Data Engineer, 
 - [Methodology](#Methodology)
 - [Contribution](#contribution)
 - [Contact](#contact)
-
+ 
 ## Description
 
 A data pipeline serves as a sophisticated mechanism for seamlessly transporting data from one system to another. This process is dynamic, accommodating scenarios where data updates may or may not occur, and it operates in real-time or streaming mode rather than relying solely on batch processing.
