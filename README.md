@@ -301,7 +301,7 @@ To operationalize this imperative, consider the following strategic steps:
  │   ├── deploy_s3_raw_ssto_parquet_bucket.sh
  │   ├── deploy_kinesis_firehose.sh
  ├── config/
- │   │   ├── s3_dataset_bucket_config.json
+ │   │   ├── s3_dataset_bucket_config.json 
  │   │   ├── kinesis_stream_1_config.json
  │   │   ├── kinesis_stream_2_config.json
  │   │   ├── kinesis_analytics_config.json
